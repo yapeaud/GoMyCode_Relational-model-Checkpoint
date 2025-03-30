@@ -1,0 +1,8 @@
+Hotel ( Hotel_Id, Hotel_Name )
+Type ( Type_Id, Type_Name )
+Room ( Room_Id, Floor, Hotel_Id, Type_Id )
+Category ( Category_Id, Category_Name, Price, Beds_Numbers )
+Employee ( Employee_Id, Employee_Name, Employee_Speciality )
+Works ( Employee_Id, Hotel_Id ) ==> Relation entre Employee et Hotel
+Leads ( Leader_Id, Employee_Id ) ==> Auto-relation Employee
+Room_Category ( Room_Id, Category_Id ) ==> Relation entre Room et Category
