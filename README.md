@@ -16,43 +16,43 @@ Voici la transformation du modèle de relation entre entités en un schéma rela
 ### Tables et leurs attributs
 
 #### **Hotel**
-- `Hotel_Id` (Primary Key)
+- `Hotel_Id` 
 - `Hotel_Name`
 
 #### **Type**
-- `Type_Id` (Primary Key)
+- `Type_Id` 
 - `Type_Name`
 
 #### **Room**
-- `Room_Id` (Primary Key)
+- `Room_Id` 
 - `Floor`
-- `Hotel_Id` (Foreign Key référant `Hotel`)
-- `Type_Id` (Foreign Key référant `Type`)
+- `Hotel_Id`
+- `Type_Id` 
 
 #### **Category**
-- `Category_Id` (Primary Key)
+- `Category_Id` 
 - `Category_Name`
 - `Price`
 - `Beds_Numbers`
 
 #### **Employee**
-- `Employee_Id` (Primary Key)
+- `Employee_Id` 
 - `Employee_Name`
 - `Employee_Speciality`
 
 ### Relations entre les tables
 
 #### **Works** (Relation entre `Employee` et `Hotel`)
-- `Employee_Id` (Foreign Key référant `Employee`)
-- `Hotel_Id` (Foreign Key référant `Hotel`)
+- `Employee_Id` 
+- `Hotel_Id` 
 
 #### **Leads** (Auto-relation `Employee`)
-- `Leader_Id` (Foreign Key référant `Employee`)
-- `Employee_Id` (Foreign Key référant `Employee`)
+- `Leader_Id`
+- `Employee_Id`
 
 #### **Room_Category** (Relation entre `Room` et `Category`)
-- `Room_Id` (Foreign Key référant `Room`)
-- `Category_Id` (Foreign Key référant `Category`)
+- `Room_Id` 
+- `Category_Id` 
 
 ---
 
